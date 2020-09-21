@@ -1,0 +1,46 @@
+.newsletter
+  margin-bottom: 10rem
+  padding: 7.5rem 0
+  background-color: #f0f0f0
+  &-wrapper
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+  &__title
+    margin-bottom: 8rem
+    font: normal 400 3rem "PlayfairDisplay"
+    letter-spacing: 0.75px
+    color: $color-dark
+    text-align: center
+
+  .form
+    display: flex
+    align-items: center
+    justify-content: space-between
+    border-bottom: 2px solid $color-dark2
+    &__input
+      width: 40rem
+      padding: 1.4rem 0
+      border: none
+      outline: none
+      background: transparent
+      font: normal 300 1.4rem 'Ubuntu'
+      color: $color-grey
+    &__button
+      padding: 0
+      &-icon
+        padding-left: 1rem
+        color: $color-dark
+        font-size: 1.4rem
+      &:hover
+        .form__button-icon
+          color: $color-dark2
+          transition: color 0.5s ease
+    &:invalid
+      .form
+        &__input
+          box-shadow: none
+        &__button-icon
+          color: #DB7093
