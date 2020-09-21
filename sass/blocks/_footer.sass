@@ -1,0 +1,35 @@
+.footer
+  padding-top: 4rem
+  padding-bottom: 4.5rem
+  background-color: #f0f0f0
+  &-wrapper
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+    max-width: 90rem  
+    margin: 0 auto
+  &__link
+    margin-right: 2rem
+    font: normal 400 1.4rem/2.4rem "PlayfairDisplay"
+    color: $color-grey
+    &:hover
+      color: $color-dark2
+      transition: color 0.5s ease
+
+  &__social-text
+    font: normal 400 1.4rem/2.4rem "PlayfairDisplay"
+    color: $color-grey
+  .social
+    display: flex
+    align-items: center
+    &__link
+      font-size: 1.5rem
+      margin-left: 1.8rem
+      &:hover
+        .social
+          &__icon
+            color: $color-dark2
+            transition: color 0.5s ease
+    &__icon
+      color: $color-grey
