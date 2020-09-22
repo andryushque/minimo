@@ -1,0 +1,91 @@
+.comments
+  padding: 7rem 0 9rem
+  &-wrapper
+    max-width: 90rem  
+    margin: 0 auto
+
+  &__count
+    display: block
+    margin-bottom: 4rem
+    @include text-grey()
+
+  &__item
+    margin-bottom: 6rem
+  .comment
+    display: flex
+    &__image-wrapper
+      min-width: 7rem
+      width: 7rem
+      height: 7rem
+      margin-right: 3rem
+      border-radius: 50%
+    &__image
+      width: 100%
+      height: 100%
+      object-fit: cover
+      border-radius: 50%
+    &__name
+      display: block
+      margin-bottom: 1rem
+      @include text-title($font-size: 1.4rem, $font-weight: 700)
+    &__text
+      margin-bottom: 2rem
+      @include text-paragraph()
+
+  &__leave-comment
+    display: flex
+    margin-bottom: 4rem
+  &__user
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 7rem
+    min-width: 7rem
+    height: 7rem
+    margin-right: 3rem
+    border-radius: 50%
+    background-color: #ededea
+    .user
+      &__initials
+        font: normal 300 3.4rem "Ubuntu"
+        text-transform: uppercase
+        color: $color-light
+  .form
+    width: 100%
+    max-width: 80rem
+    &__textarea
+      width: 100%
+      height: 7rem
+      min-height: 7rem
+      max-height: 14rem
+      resize: vertical
+      border: 1px solid #c8c8c8
+      border-radius: 0.5rem
+      padding: 2rem
+      font: normal 300 1.4rem "Ubuntu"
+      color: $color-grey
+      &::placeholder
+        text-transform: uppercase
+        color: $color-grey2
+
+    &__share
+      display: flex
+      align-items: center
+      justify-content: flex-end
+
+  &__share
+    display: flex
+    align-items: center
+    justify-content: flex-end
+  .share
+    &__text
+      display: inline-block
+      margin-right: 1rem
+      @include text-grey($font-size: 1.3rem)
+    &__link
+      margin-left: 1rem
+      font-size: 1.7rem
+      color: $color-grey2
+      &:hover
+        color: $color-dark2
+        transition: color 0.5s ease
