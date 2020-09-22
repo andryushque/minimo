@@ -1,6 +1,7 @@
 /*=== Mixins for text styles ===*/
-@mixin text-grey()
-  font: normal 300 1.4rem 'Ubuntu'
+@mixin text-grey($font-size: 1.4rem)
+  font: normal 300 'Ubuntu'
+  font-size: $font-size
   text-transform: uppercase
   color: $color-grey2
 
