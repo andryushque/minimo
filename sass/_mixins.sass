@@ -1,12 +1,17 @@
 /*=== Mixins for text styles ===*/
 @mixin text-grey($font-size: 1.4rem)
-  font: normal 300 'Ubuntu'
+  font-style: normal 
+  font-family: "Ubuntu"
+  font-weight: 300
   font-size: $font-size
   text-transform: uppercase
   color: $color-grey2
 
-@mixin text-title()
-  font: normal 400 3rem "PlayfairDisplay"
+@mixin text-title($font-size: 3rem)
+  font-style: normal 
+  font-family: "PlayfairDisplay"
+  font-weight: 400
+  font-size: $font-size
   color: $color-grey
 
 @mixin text-paragraph()
